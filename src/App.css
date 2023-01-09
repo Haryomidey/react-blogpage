@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@100&family=Quicksand:wght@300;400;500;600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+*, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+    background: rgb(13, 6, 29);
+    color: white;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+header nav h1{
+    border-bottom: 3px solid rgb(247, 33, 33);
+    padding-bottom: 2px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+header nav a.active{
+    color: rgb(255, 255, 255);
+    background: red;
+    padding: 7px 13px;
+    border-radius: 10px;
+    line-height: 40px;
+}
+
+.search-blog{
+    margin-left: 10px;
+    outline: none;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgb(176, 176, 176);
+    color: white;
+    font-size: 0.9rem;
+    padding: 4px 0;
+    transition: border-bottom 0.2s;
+}
+
+.search-blog:focus{
+    border-bottom: 2px solid white;
+}
+
+.home h1, .add-blog h1{
+    margin: 10px 0;
+}
+
+.each-blog{
+    transition: box-shadow 0.4s;
+    box-shadow: 1px 1px 4px white;
+    padding: 15px;
+    margin-block: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.each-blog:hover{
+    box-shadow: 2px 2px 10px white;
+}
+
+.blogs .blog-author{
+    font-size: 1.2rem;
+    padding: 5px 0;
+}
+
+.blogs p{
+    line-height: 150%;
+    padding-bottom: 20px;
+}
+
+.blogs a{
+    color: rgb(235, 40, 40);
+}
+
+.no-match{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    text-align: center;
+}
+
+form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    gap: 20px;
+}
+
+form input, textarea{
+    width: 500px;
+    max-width: 90%;
+    height: 50px;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+textarea{
+    padding: 10px;
+    height: 270px;
+}
+
+.add-blog-btn{
+    padding: 10px;
+    font-size: 1.3rem;
+    border-radius: 7px;
+    outline: none;
+    font-weight: 600;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    background: red;
+}
+
+.read-blog{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.read-blog button{
+    padding: 10px;
+    font-size: 1.3rem;
+    border-radius: 7px;
+    outline: none;
+    font-weight: 600;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    background: red;
+}
+
+.blog-body{
+    line-height: 200%;
+}
+
+.edit-delete-btn{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.edit-delete-btn .fa-solid{
+    font-size: 2.1rem;
+    color: rgb(192, 192, 192);
+    cursor: pointer;
+}
